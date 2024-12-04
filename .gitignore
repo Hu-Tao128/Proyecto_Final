@@ -1,0 +1,24 @@
+# Ignorar archivos específicos
+.env
+secrets.txt
+
+#Se usan los gatos o numerales para comentar lineas :)
+
+# Ignorar carpetas específicas
+#/vendor/
+#/node_modules/
+
+# Ignorar archivos generados por el sistema
+#.DS_Store
+#Thumbs.db
+
+# Ignorar logs
+#*.log
+
+# Ignorar cachés y bases de datos locales
+#/tmp/
+#*.sqlite3
+
+# Ignorar configuraciones de IDEs
+#.idea/
+#.vscode/

@@ -1,0 +1,888 @@
+:root {
+    --font-main: 'Segoe UI', sans-serif; 
+    --white: #ffffff;
+    --black: #000000;
+    --little_blue: #dee6ff;
+    --little_gray: #efefef;
+    --blue: #6c78ff;
+    --blue_little: #ebf9ff;
+    --dark_blue: #003afe;
+    --very_green: #4dfe00;
+    --green: #1ce42b;
+    --purple: #003afe;
+    --rojo: #ff4c4c;
+    --rojo_hover: #ff6666;
+}
+
+body {
+    background-color: var(--little_blue);
+    display: grid;
+    min-height: 100vh;
+    position: relative;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------*/
+
+/* CSS for the login*/
+.form_login {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 25rem;
+    background-color: var(--blue_little);
+}
+
+.form_login button{
+    background-color: var(--green);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 6rem;
+    height: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.form_login button:hover{
+    background-color: var(--very_green);
+    border-color: var(--very_green);
+}
+
+.form1 {
+    margin-top: 10rem;
+}
+/*--------------------------------------------------------------------*/
+/* CSS for the inpus and the placeholders for the login*/
+.form_login input:focus {
+    border-bottom: 2px solid var(--blue);
+}
+
+.form_login input {
+    border: none;
+    border-bottom: 2px solid var(--black);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 20rem;
+    height: 2rem;
+    outline: none;
+    transition: border-color 0.3 ease;
+    background-color: var(--blue_little);
+}
+
+::placeholder {
+    color: black;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .70;
+}
+
+/* CSS FOR LOGIN ERROR*/
+
+.loginButton{
+    background-color: var(--dark_blue);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 12rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.loginButton:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.loginButton20{
+    background-color: var(--rojo);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 12rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+    border-color: var(--rojo);
+    
+}
+
+.loginButton20:hover{
+    background-color: var(--rojo_hover);
+    border-color: var(--rojo_hover);
+}
+/*-----------------------------------------------------------------------------------------*/
+/* CSS FOR THE HEADER */
+
+
+
+/*home divs for the information */
+
+.questions {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    width: 29rem;
+    height: auto;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.8rem;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+.home_first_div {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    width: 25rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.8rem;
+    max-height: 15rem;  
+    overflow-y: auto;
+}
+
+.container_home {
+    display: flex;
+    justify-content: center;
+}
+
+.home_first_div button{
+    background-color: var(--green);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    color: var(--black);
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.home_first_div button:hover{
+    background-color: var(--very_green);
+    border-color: var(--very_green);
+}
+
+.home_first_div p{
+    margin-left: 1rem;
+}
+
+.home_button {
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Estilos base del formulario */
+.formPage {
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 25rem;
+    background-color: white;
+    height: auto;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 3px solid #00c85300; 
+}
+
+ .inputID {
+    opacity: 100;
+    position:relative;
+    width: 0px;
+    height: 0px;
+    text-align: left;
+    font-family: inherit;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: normal;
+    color: #666;
+    font-size: 0.9rem;
+    background: transparent;
+    outline: none;
+    border: 0px solid #e0e0e0;
+    border-radius: 0px;
+    display: none;
+}
+
+/* Estilos para inputs */
+.formPage input {
+    margin: 0.5rem 0 1rem 0;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.1rem;
+    transition: border-color 0.2s ease;
+    background-color: white;
+}
+
+.formPage input:focus {
+    border-color: #0025c8;
+    box-shadow: none;
+    outline: none;
+}
+
+.formPage select{
+    margin: 0.5rem 0 1rem 0;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para labels */
+.formPage label {
+    text-align: left;
+    font-family: inherit;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: normal;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estilos para textarea */
+.formPage textarea {
+    width: 100%;
+    min-height: 8rem;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin: 0.5rem 0 1rem 0;
+    font-family: inherit;
+}
+
+.formPage textarea:focus {
+    border-color: #9ea9ad;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Estilos para el botón */
+.formPage button {
+    background-color: #6d75ec;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.75rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.formPage button:hover {
+    background-color: #7735f0;
+    transform: none;
+    box-shadow: none;
+}
+
+.formPage button:active {
+    background-color: #7731e7;
+}
+
+.buttonCancel {
+    text-align: center;
+    background-color:  #f77070    ;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 25rem;
+    height: 2.75rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.buttonCancel:hover {
+    background-color:  #f92c2c    ;
+    transform: none;
+    box-shadow: none;
+}
+
+.buttonCancel:active {
+    background-color:  #f92222    ;
+}
+
+/*Estilos de fieldset ya que no se usan, pero NO BORRA */
+.formPage fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .formPage {
+        margin: 1rem;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* CSS for the information */
+.info {
+    background-color: var(--white);
+    width: 25rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.info h2 {
+    padding-top: 1rem;
+}
+
+.info p{
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info button{
+    background-color: var(--dark_blue);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.info button:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.info a{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* CSS for the tables */
+.tableAdmin {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9rem;
+    width: 95%;
+    border: none;
+    font-family: Arial, sans-serif; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra prominente */
+    border-radius: 12px; /* Bordes más redondeados */
+    overflow: hidden; /* Para ocultar cualquier borde que sobresalga de los bordes redondeados */
+}
+
+.scroll {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Header */
+.tableAdmin th {
+    background-color: var(--purple);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Table data cells */
+.tableAdmin td {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e0e0e0; 
+    color: var(--dark-gray); /* Texto más oscuro */
+    font-family: Arial, sans-serif;  
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Alternate row colors for better readability */
+.tableAdmin tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tableAdmin tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tableAdmin tr:hover td {
+    background-color: var(--little_gray);
+}
+
+/* Optional: Add icons inside cells */
+.tableAdmin td.icon-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tableAdmin td.icon-cell img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icon cells */
+.tableAdmin td.icon-cell:hover img {
+    transform: rotate(180deg);
+}
+
+/* Responsive Design: Make the table look good on smaller screens */
+@media (max-width: 768px) {
+    .tableAdmin {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .tableAdmin th,
+    .tableAdmin td {
+        padding: 0.8rem;
+    }
+}
+
+/*CSS for the image and other things in the home.php*/
+
+.homeInfo {
+
+    background-image: url('../images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 22rem;
+    background-color: none;
+    background-blend-mode: overlay;
+    margin-bottom: 2rem;
+}
+
+.moreInfo {
+    height: auto;
+    width: 30rem;
+    background-color: rgba(12, 105, 245, 0.5);
+    margin: 0 auto;
+}
+
+.moreInfo h2{
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+.moreInfo p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.radio-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-large {
+    width: 100px;
+    height: 1px;
+}
+
+.radio-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-large {
+    width: 100px;
+    height: 1px;
+}  
+
+/* Estilos para el botón Modify */
+.action-modify {
+    background-color: #13a4f8; 
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.action-modify:hover {
+    background-color: #3575ec; 
+}
+
+/* Estilos para el botón Delete */
+.action-delete {
+    background-color: #f44336; 
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.action-delete:hover {
+    background-color: #d32f2f; 
+}
+
+/* Estilos para formulario/regristrar empleado */
+.form-empleadoX {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Título */
+.h2formX {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para el campo de entrada */
+.form-empleadoX fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    
+}
+
+.divformX {
+    flex: 1 1 45%; 
+    margin-bottom: 25px; 
+}
+
+.bottonformX {
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos de los inputs y selects */
+.form-empleadoX input[type="text"],
+.form-empleadoX input[type="email"],
+.form-empleadoX input[type="password"],
+.form-empleadoX input[type="number"],
+.form-empleadoX input[type="date"],
+.form-empleadoX select {
+    width: 90%;
+    padding: 12px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Para que no se pueda poner números negativos y quitar la barra de arria y abajo*/
+input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+/*Para firefox*/
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+
+/* Contenedor de género */
+.containerformX {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botón de envío */
+.Botton-envioX {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background: #6c78ff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.Botton-envioX:hover {
+    background: #8c95fc;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/* Enhanced Header Styles */
+.header {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--dark_blue) 100%);
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--white);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.header nav a:hover::after {
+    width: 80%;
+}
+
+/* Enhanced Footer Styles */
+footer {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--dark_blue) 100%);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header nav a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+
+/* Aplicamos la fuente principal al HTML */
+html {
+    height: 100%;
+    font-family: var(--font-main);
+}
+
+/* Unificamos las fuentes en los encabezados */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: var(--font-main);
+    margin-left: 1rem;
+}
+
+h2 {  
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+p {
+    font-family: var(--font-main);
+}
+
+/* El resto del CSS se mantiene igual, solo cambiamos las declaraciones de font-family */
+
+footer p {
+    font-family: var(--font-main);
+    text-align: center;
+}
+
+.form_login button {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    opacity: .70;
+}
+
+.loginButton {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.loginButton20 {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.header nav a {
+    font-family: var(--font-main);
+}
+
+.home_first_div button {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.formPage {
+    font-family: var(--font-main);
+}
+
+.formPage input {
+    font-family: var(--font-main);
+}
+
+.formPage label {
+    font-family: var(--font-main);
+}
+
+.formPage textarea {
+    font-family: var(--font-main);
+}
+
+.formPage button {
+    font-family: var(--font-main);
+}
+
+.info p {
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+}
+
+.info button {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.tableAdmin {
+    font-family: var(--font-main);
+}
+
+.tableAdmin th {
+    font-family: var(--font-main);
+}
+
+.tableAdmin td {
+    font-family: var(--font-main);
+}
+
+
+

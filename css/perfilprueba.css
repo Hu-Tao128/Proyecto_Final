@@ -1,0 +1,129 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}*/
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tittlePerfil {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid #007bff; 
+    }
+    .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.email-display {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.update-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.labelPerfil {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:disabled {
+    background-color: #f5f5f5;
+}
+
+/* Estilo para el contenedor de la contraseña */
+.password-container {
+    position: relative;
+}
+
+/* Estilo para el icono dentro del campo de contraseña */
+.password-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #666;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

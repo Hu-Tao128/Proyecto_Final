@@ -1,0 +1,649 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --little_blue:     #dee6ff     ;
+    --little_gray:  #efefef ;
+    --blue:   #6c78ff  ;
+    --blue_little: #ebf9ff  ;
+    --dark_blue:  #003afe    ;
+    --very_green:  #4dfe00;
+    --green:  #1ce42b;
+    /*--purple:  #b814ff ;*/
+    --purple: #003afe;
+    --rojo: #ff4c4c;
+    --rojo_hover: #ff6666;
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1rem;
+}
+
+h2 {  
+  text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body {
+    background-color: var(--little_blue);
+    display: grid;
+    min-height: 100vh;
+    position: relative;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+
+/* CCS for the footer*/
+
+footer {
+    background-color: var(--blue);
+    width: flex;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+
+
+/* CSS for the login*/
+.form_login {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 25rem;
+    background-color: var(--blue_little);
+}
+
+.form_login button{
+    background-color: var(--green);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 6rem;
+    height: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.form_login button:hover{
+    background-color: var(--very_green);
+    border-color: var(--very_green);
+}
+
+.form1 {
+    margin-top: 10rem;
+}
+
+/* CSS for the inpus and the placeholders for the login*/
+.form_login input:focus {
+    border-bottom: 2px solid var(--blue);
+}
+
+.form_login input {
+    border: none;
+    border-bottom: 2px solid var(--black);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 20rem;
+    height: 2rem;
+    outline: none;
+    transition: border-color 0.3 ease;
+    background-color: var(--blue_little);
+}
+
+::placeholder {
+    color: black;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .70;
+}
+
+/* CSS FOR LOGIN ERROR*/
+
+.loginButton{
+    background-color: var(--dark_blue);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 12rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.loginButton:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+
+
+.loginButton20{
+    background-color: var(--rojo);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 12rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+    border-color: var(--rojo);
+    
+}
+
+.loginButton20:hover{
+    background-color: var(--rojo_hover);
+    border-color: var(--rojo_hover);
+}
+
+/* CSS FOR THE HEADER */
+
+.header {
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Navegación */
+.header nav {
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+    align-items: center;
+}
+
+.header nav a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto de hover */
+.header nav a:hover {
+    background-color: var(--dark_blue);
+    transform: scale(1.1); /* Efecto de aumento */
+    color: white; /* Cambio de color al pasar el cursor */
+}
+
+/* Opciones adicionales */
+.options {
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Apilar elementos en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .header nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header nav a {
+        font-size: 16px;
+    }
+}
+
+
+/*home divs for the information */
+
+.home_first_div {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    width: 25rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.8rem;
+    max-height: 15rem;
+    margin-bottom: 3rem;
+    overflow-y: auto;
+}
+
+.container_home {
+    display: flex;
+    justify-content: center;
+}
+
+.home_first_div button{
+    background-color: var(--green);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    color: var(--black);
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.home_first_div button:hover{
+    background-color: var(--very_green);
+    border-color: var(--very_green);
+}
+
+.home_first_div p{
+    margin-left: 1rem;
+}
+
+.home_button {
+    text-align: center;
+}
+
+
+/* CSS for the form for the page */
+
+/* CSS para el formulario de la página. Estilos para el formulario específico con la clase .formPage 
+Aqui no le muevan porque mueve a todos los estilos de los formularios de la pagina*/
+.formPage {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 25rem;
+    background-color: var(--blue_little);
+    height: auto;
+}
+
+.formPage button{
+    background-color: var(--dark_blue);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 15rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.formPage button:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.formPage input {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.formPage label {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.formPage textarea {
+    width: 100%;
+    max-width: 20rem;
+    min-height:10rem;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical; 
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.formPage fieldset{
+    height: auto;
+}
+
+
+/* CSS for the information */
+.info {
+    background-color: var(--white);
+    width: 25rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.info h2 {
+    padding-top: 1rem;
+}
+
+.info p{
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info button{
+    background-color: var(--dark_blue);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: var(--dark_blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 8rem;
+    height: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.info button:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.info a{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.position {
+    
+}
+
+
+/* CSS for the tables */
+.tableAdmin {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9rem;
+    width: 95%;
+    border: none;
+    font-family: Arial, sans-serif; /* Cambio de fuente a Arial */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra prominente */
+    border-radius: 12px; /* Bordes más redondeados */
+    overflow: hidden; /* Para ocultar cualquier borde que sobresalga de los bordes redondeados */
+}
+
+/* Header */
+.tableAdmin th {
+    background-color: var(--purple); /* Color sólido en el encabezado */
+    color: white;
+    font-family: Arial, sans-serif; /* Asegura que el encabezado use Arial */
+    padding: 1rem;
+    border: none;
+    text-transform: uppercase; /* Para dar un estilo más elegante */
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil en el encabezado */
+}
+
+/* Table data cells */
+.tableAdmin td {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #e0e0e0; /* Bordes más suaves */
+    color: var(--dark-gray); /* Texto más oscuro */
+    font-family: Arial, sans-serif; /* Asegura que las celdas usen Arial */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transición solo para cambios de color */
+}
+
+
+/* Alternate row colors for better readability */
+.tableAdmin tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo ligeramente gris para filas pares */
+}
+
+.tableAdmin tr:nth-child(odd) {
+    background-color: #fff; /* Fondo blanco para filas impares */
+}
+
+.tableAdmin tr:hover td {
+    background-color: var(--little_gray); /* Cambia el color de fondo de cada celda en la fila */
+}
+
+/* Optional: Add icons inside cells */
+.tableAdmin td.icon-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tableAdmin td.icon-cell img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icon cells */
+.tableAdmin td.icon-cell:hover img {
+    transform: rotate(180deg); /* Rotación de iconos al pasar el ratón */
+}
+
+/* Responsive Design: Make the table look good on smaller screens */
+@media (max-width: 768px) {
+    .tableAdmin {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .tableAdmin th,
+    .tableAdmin td {
+        padding: 0.8rem;
+    }
+}
+
+/*CSS for the image and other things in the home.php*/
+
+.homeInfo {
+
+    background-image: url('../images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    background-color: none;
+    background-blend-mode: overlay;
+    margin-bottom: 2rem;
+}
+
+.moreInfo {
+    height: auto;
+    width: 30rem;
+    background-color: rgba(12, 105, 245, 0.5);
+    margin: 0 auto;
+}
+
+.moreInfo h2{
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+.moreInfo p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.radio-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-large {
+    width: 100px;
+    height: 1px;
+}
+
+.radio-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-large {
+    width: 100px;
+    height: 1px;
+}  
+
+/* Estilos para el botón Modify */
+.action-modify {
+    background-color: #13a4f8; 
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.action-modify:hover {
+    background-color: #3575ec; 
+}
+
+/* Estilos para el botón Delete */
+.action-delete {
+    background-color: #f44336; 
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.action-delete:hover {
+    background-color: #d32f2f; 
+}
+
+/* Estilos para formulario/regristrar empleado */
+.form-empleadoX {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Título */
+.h2formX {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para el campo de entrada */
+.form-empleadoX fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    
+}
+
+.divformX {
+    flex: 1 1 45%; 
+    margin-bottom: 25px; 
+}
+
+.bottonformX {
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos de los inputs y selects */
+.form-empleadoX input[type="text"],
+.form-empleadoX input[type="email"],
+.form-empleadoX input[type="password"],
+.form-empleadoX input[type="date"],
+.form-empleadoX select {
+    width: 90%;
+    padding: 12px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Contenedor de género */
+.containerformX {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botón de envío */
+.Botton-envioX {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background: #6c78ff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.Botton-envioX:hover {
+    background: #8c95fc;
+}
